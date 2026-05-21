@@ -7,7 +7,7 @@ q = core.build_project_quantale()
 # --- Page Config ---
 st.set_page_config(page_title="Project Resilience Analyzer", page_icon="🛡️")
 
-st.title("🛡️ Project Resilience Analyzer")
+st.title("Project Resilience Analyzer")
 st.markdown("""
 This dashboard uses **Residuated Quantale** logic to calculate bottleneck risks 
 and safety margins for your project dependencies.
@@ -21,7 +21,7 @@ with st.sidebar:
     st.write("**Math Check:**")
     adj = q.verify_adjunction()
     if adj["adjunction_holds"]:
-        st.success("Adjunction Laws Verified ✅")
+        st.success("Adjunction Laws Verified")
 
 # --- Step 1: Bottleneck Assessment ---
 st.header("1. Dependency Assessment")

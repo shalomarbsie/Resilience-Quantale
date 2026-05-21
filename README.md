@@ -32,16 +32,22 @@ The right residual ($a \to c$) answers the question of **Risk Budgeting**:
 This allows managers to solve for the "missing link" in a project chain to ensure they stay within their "Resilience Buffer."
 
 ## 4. How do I run the app?
-The app is built using **Streamlit**. 
+The project includes a **Makefile** to automate the setup and execution.
 
+### Using Make (Recommended)
 1.  **Install dependencies:**
     ```bash
-    pip install -r requirements.txt
+    make install
     ```
 2.  **Run the application:**
     ```bash
-    streamlit run app.py
+    make run
     ```
+
+### Manual Commands (Fallback)
+If you do not have `make` installed:
+*   Install: `pip install -r requirements.txt`
+*   Run: `streamlit run app.py`
 
 ## 5. What does a sample output look like?
 
